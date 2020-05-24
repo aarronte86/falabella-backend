@@ -1,0 +1,11 @@
+import express from "express";
+
+var app = express();
+
+app.post("/", function (req, res) {
+  res.send("Hello World!");
+});
+
+app.listen(3000, function () {
+  console.log("App listening on port 3000!");
+});

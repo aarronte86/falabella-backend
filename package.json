@@ -1,0 +1,20 @@
+{
+  "name": "falabella-backend",
+  "version": "1.0.0",
+  "description": "Falabella frontend challenge. Backend service",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alfredo Arronte",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0"
+  }
+}
