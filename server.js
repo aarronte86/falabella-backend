@@ -1,6 +1,9 @@
 import express from "express";
+import { json } from "body-parser";
 
 var app = express();
+
+app.use(json());
 
 app.post("/", function (req, res) {
   res.send("Hello World!");
