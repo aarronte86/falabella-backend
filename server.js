@@ -3,10 +3,12 @@ import { json } from "body-parser";
 
 var app = express();
 
+const cors = require("cors");
+app.use(cors());
 app.use(json());
 
-app.post("/", function (req, res) {
-  res.send("Hello World!");
+app.post("/applications", function (req, res) {
+  res.status(200).json({ status: "ok" });
 });
 
 app.listen(3000, function () {
